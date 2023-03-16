@@ -1,11 +1,6 @@
 spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: http://nacos-registry:8848
-      config:
-        server-addr: http://nacos-registry:8848
-        file-extension: yaml
-logging:
-  level:
-    root: info
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
